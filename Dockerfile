@@ -32,11 +32,12 @@ RUN \
 
 # Add entrypoint script
 COPY docker-entrypoint.sh /usr/local/bin/
-# replace pushpin config files with bharath's configuration files
-COPY pushpin/ /etc/
 
 # Define default entrypoint and command
 ENTRYPOINT ["docker-entrypoint.sh"]
+# replace pushpin config files with bharath's configuration files
+COPY pushpin/ /etc/pushpin
+
 CMD ["pushpin", "--merge-output"]
 
 # Expose ports.
