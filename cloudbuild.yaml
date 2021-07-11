@@ -22,7 +22,7 @@ steps:
   args:
   - 'build'
   - '-t'
-  - 'gcr.io/$PROJECT_ID/audios:$SHORT_SHA'
+  - 'gcr.io/$PROJECT_ID/audios/master-pushpin:$SHORT_SHA'
   - '.'
 
 # This step pushes the image to Container Registry
@@ -32,5 +32,5 @@ steps:
   id: Push
   args:
   - 'push'
-  - 'gcr.io/$PROJECT_ID/audios:$SHORT_SHA'
+  - 'gcr.io/$PROJECT_ID/audios/master-pushpin:$SHORT_SHA'
 # [END cloudbuild]
