@@ -2,7 +2,7 @@
 # Pushpin Dockerfile
 #
 # https://github.com/fanout/docker-pushpin
-#
+# This folder configuration is maintained by bharath <bharath.vadithya@gmail.com>
 
 # Pull the base image
 FROM ubuntu:18.04
