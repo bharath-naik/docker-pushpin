@@ -22,13 +22,7 @@ docker build -t fanout/pushpin .
 ## Usage
 
 ```sh
-docker run \
-  -d \
-  -p 7999:7999 \
-  -p 5560-5563:5560-5563 \
-  --rm \
-  --name pushpin \
-  fanout/pushpin
+docker run -d -p 7999:7999 -p 5560-5563:5560-5563 --rm --name pushpin fanout/pushpin
 ```
 
 By default, Pushpin routes traffic to a test handler.  See the [Getting Started Guide](https://pushpin.org/docs/getting-started/) for more information.
